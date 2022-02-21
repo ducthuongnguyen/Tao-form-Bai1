@@ -7,23 +7,33 @@
         .fontcolor {
             color: orangered;
         }
+        .trai {
+            float: right    ;
+        }
+        .tb1 {
+            width: 500px;
+        }
     </style>
 </head>
 <body>
 <center>
     <form>
-        <h1 style="background-color: orangered; color: white">SỞ THÍCH CỦA BẠN</h1>
-        <table border="1px solid">
+        <table class ="tb1">
             <tr>
-                <td style="color: royalblue">Họ và tên</td>
+            <th colspan="2" STYLE="background-color: orangered; color: white;font-size:25px">
+                SỞ THÍCH CỦA BẠN
+            </th>
+            </tr>
+            <tr>
+                <td style="color: royalblue" class="trai">Họ và tên</td>
+                <td><input type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td style="color: royalblue" class = "trai">Email</td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td style="color: royalblue">Email</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td style="color: royalblue;vertical-align: text-top">Sở thích</td>
+                <td style="color: royalblue;vertical-align: text-top" class ="trai">Sở thích</td>
                 <td class="fontcolor">
                     <table>
                         <tr>
@@ -34,18 +44,20 @@
                         <tr>
                             <td><input type="checkbox">Lướt web</td>
                             <td><input type="checkbox">Chơi game</td>
-                            <td><input type="checkbox">Điện ảnh</td></tr>
+                            <td><input type="checkbox">Điện ảnh</td>
+                        </tr>
                         <tr>
                             <td><input type="checkbox">Du lịch</td>
                         </tr>
-                        <tr>
-                            <td><input type="submit" value="Gửi thông tin"></td>
-                            <td><input type="submit" value="Nhập lại"></td>
-                        </tr>
+
                     </table>
                 </td>
             </tr>
-
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại"></td>
+            </tr>
         </table>
     </form>
 </center>
