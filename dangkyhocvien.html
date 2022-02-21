@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .bl {
+           color: royalblue;
+        }
+    </style>
 </head>
 <body>
+<form action="#">
 <table>
     <th colspan="2" >ĐĂNG KÝ HỌC VIÊN</th>
-    <TR>
-        <td>Họ</td>
+    <TR class="bl">
+        <td>Họ và tên</td>
+        <td><input type="text" size="30"></td>
     </TR>
+    <tr class="bl">
+        <td>Ngày sinh</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr class="bl">
+        <td>Giới tính</td>
+        <td style   ="color: black">
+            <input type="radio" name="gender"/>Nam
+      <input type="radio" name="gender"/>Nữ</td>
+    </tr>
+    <tr class="bl" rowspan="20">
+        <td>Địa chỉ</td>
+        <td ><input type="text" size="30" ></td>
+    </tr>
+    <tr>
+        <td class="bl"> Lớp</td>
+        <td>
+            <select>
+                <option>--Chọn lớp--</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="bl">Email</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="bl">Điện thoại</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+        </td>
+    </tr>
 </table>
-
+</form>
 </body>
 </html>
